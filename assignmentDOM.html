@@ -9,18 +9,23 @@
 
         <h3>Students Details</h3>							   
 
-            <div class="div-stud-details">
-                Student Name: <input type="text" class="input-stud-info"  id = "stud-name-id"/><br><br>
-                Contact Number: <input type="text" class="input-stud-info" id = "stud-number-id"  /><br><br>
-                Emai Address: <input type="text" class="input-stud-info" id = "stud-email-id" /><br><br> 
-            </div>
-            
-            <br>
-            <div id="div-add-stud">								
-                <input class="btn-add-stud" type="Submit" value="Add Student" />						
-            </div>
+            <form class="form-stud-details" onsubmit="addStudent()">
+
+                <div class="div-stud-details">
+                    Student Name: <input type="text" class="input-stud-info"  id = "stud-name-id"/><br><br>
+                    Contact Number: <input type="text" class="input-stud-info" id = "stud-number-id"  /><br><br>
+                    Emai Address: <input type="text" class="input-stud-info" id = "stud-email-id" /><br><br> 
+                </div>
+                
+                <br>
+                <div id="div-add-stud">								
+                    <input class="btn-add-stud" type="Submit" value="Add Student" />						
+                </div>
+
+            </form>   
 
             <br><br>
+
             <table>
                 <tr class="tr-stud-info">
                     <th class="tablehead">Student Name</th>
