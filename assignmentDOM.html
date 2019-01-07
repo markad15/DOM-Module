@@ -1,22 +1,43 @@
 <!DOCTYPE html>
     <head>
         <title>Simple DOM Page</title>
-        <link rel="stylesheet" href="./.css">
+        <link rel="stylesheet" href="./assignDOM.css">
         <script src="./javaScriptDOM.js"></script>
     </head>
 
     <body>
 
-        <span class="span_style">Students Details</span>							   
+        <h3>Students Details</h3>							   
 
+            <div class="div-stud-details">
+                Student Name: <input type="text" class="input-stud-info"  id = "stud-name-id"/><br><br>
+                Contact Number: <input type="text" class="input-stud-info" id = "stud-number-id"  /><br><br>
+                Emai Address: <input type="text" class="input-stud-info" id = "stud-email-id" /><br><br> 
+            </div>
             
-            <table border=1 style="border-collapse:collapse;width:100%;">
-                <tr>
-                    <th class="tablehead">Name</th>
-                    <th class="tablehead">Contact No.</th>
-                    <th class="tablehead">Email</th>
+            <br>
+            <div id="div-add-stud">								
+                <input class="btn-add-stud" type="Submit" value="Add Student" />						
+            </div>
+
+            <br><br>
+            <table>
+                <tr class="tr-stud-info">
+                    <th class="tablehead">Student Name</th>
+                    <th class="tablehead">Contact Number</th>
+                    <th class="tablehead">Email Address</th>
                     <th class="tablehead">Remove</th>
                 </tr>
+                <tr class="tr-stud-info">
+                    <td class="td-stud-name">Sourabh Sahu</td>
+                    <td class="td-stud-number">8888855555</td>
+                    <td class="td-stud-email">sourabh@gmail.com</td>
+                    <td class="td-stud-remove">Remove</td>
+                </tr>
+            </table>
+            
+            
+            
     </body>
 
 </html>
