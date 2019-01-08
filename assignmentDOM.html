@@ -2,14 +2,14 @@
     <head>
         <title>Simple DOM Page</title>
         <link rel="stylesheet" href="./assignDOM.css">
-        <script src="./javaScriptDOM.js"></script>
+        
     </head>
 
     <body>
 
         <h3>Students Details</h3>							   
 
-            <form class="form-stud-details" onsubmit="addStudent()">
+            <form class="form-stud-details" method="post">
 
                 <div class="div-stud-details">
                     Student Name: <input type="text" class="input-stud-info"  id = "stud-name-id"/><br><br>
@@ -19,7 +19,7 @@
                 
                 <br>
                 <div id="div-add-stud">								
-                    <input class="btn-add-stud" type="Submit" value="Add Student" />						
+                    <input class="btn-add-stud" type="Submit" value="Add Student" onclick="addStudent()" />						
                 </div>
 
             </form>   
@@ -37,12 +37,15 @@
                     <td class="td-stud-name">Sourabh Sahu</td>
                     <td class="td-stud-number">8888855555</td>
                     <td class="td-stud-email">sourabh@gmail.com</td>
-                    <td class="td-stud-remove">Remove</td>
+                    <td class="td-stud-remove">
+                        <input class="btn-delete-remove" type="Submit" value="Remove Student" onclick="removeStudent()" />
+                    </td>
+                    
                 </tr>
             </table>
             
             
-            
+            <script src="./javaScriptDOM.js"></script>
     </body>
 
 </html>
