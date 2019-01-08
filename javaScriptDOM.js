@@ -1,5 +1,8 @@
 
 
+var searchElement = document.getElementById("input-search-info").value;
+
+
 function removeStudent()
 {
     var trList = document.querySelectorAll(".tr-stud-info");
